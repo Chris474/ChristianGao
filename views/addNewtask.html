@@ -1,0 +1,17 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>
+            Add a new task
+        </h1>
+        <form action = '/addTaskInfo' method='POST'>
+            Task Name:<input type = 'text' name = 'taskname'/><br/>
+            Task Due:<input type = 'text' name = 'taskdue'/><br/>
+            Task Desc:<input type = 'text' name = 'taskdesc'/><br/>
+            <button type = 'submit'>Send</button>
+        </form>
+        <h1>Click <a href = '/'>here</a> to return home page</h1>
+    </body>
+</html>
