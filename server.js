@@ -24,7 +24,8 @@ app.get('/addNewtask',function(req,res){
 
 app.post('/addTaskInfo',function(req,res){
     db.push(req.body);
-    res.render('listAlltask',{tasks:db});
+    let fileName = filePath + 'addNewtask.html';
+    res.sendFile(fileName);
 });
 
 app.get('/listAlltask',function(req,res){
